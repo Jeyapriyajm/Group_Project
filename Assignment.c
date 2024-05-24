@@ -83,3 +83,12 @@ void push(Stack *s, double value) {
     }
     s->items[++(s->top)] = value; //++ pre increment operator and store new value to the top
 }
+
+// Pop an element from the stack
+double pop(Stack *s) {
+    if (s->top == -1) {
+        printf("Stack Underflow\n");
+        exit(1);
+    }
+    return s->items[(s->top)--]; //-- is the post-decrement operator. It decrements the value of top after it's used in the expression
+}  commit anistalan
