@@ -42,6 +42,7 @@ int main() {
 			
 	printf(    "\t\t\t==============================="
 			         "===============================\n\n\n");
+	printf("\n\t\t To type the extension, give thespace between two Numbers\n");
 
     printf("\n\t    Enter RPN expression  \n");
     printf("\t      (operators: +, -, *, /, operands: numbers):\n\n");
