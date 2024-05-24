@@ -75,4 +75,11 @@ int main() {
 
     return 0;
 }
-
+// Push an element onto the stack
+void push(Stack *s, double value) {
+    if (s->top == MAX- 1) {
+        printf("Stack Overflow\n");
+        exit(1);
+    }
+    s->items[++(s->top)] = value; //++ pre increment operator and store new value to the top
+}
